@@ -1,11 +1,20 @@
-# version 1.2 by romangorbunov91
-# 15-Jul-2025
+# version 1.4 by romangorbunov91
+# 25-Jul-2025
 
+import numpy as np
 from Functions.user_functions import indx_even
-
+# 'coeff' - input; np.array (int or float).
+# 'f' - output; np.array (same type as input).
 def idaub_5_3_lift(coeff, int_flag):
     N = len(coeff)
     f = [0] * N
+    
+    if int_flag:
+        if not np.issubdtype(coeff.dtype, np.integer):
+            coeff = coeff.astype(int)
+    else:
+        if np.issubdtype(coeff.dtype, np.integer):  
+            coeff = coeff.astype(float)
     
     a = coeff[:(N//2)]
     d = coeff[(N//2):]
