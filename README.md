@@ -32,6 +32,8 @@
 [Link](https://pywavelets.readthedocs.io/en/latest/ref/2d-dwt-and-idwt.html)
 
 ## Биортогональное преобразование Daub 5/3 int-to-int
+Реализовано в [daub_5_3_int_notebook.ipynb](daub_5_3_int_notebook.ipynb).
+
 ### Кратномасштабный анализ
 
 <img src='readme_img/transform_daub_5_3_int.png' style='width:100%; height:auto;'>
